@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+}
+#contenedor{
+    background-color: darkgray;
+    height: 2000px;
+}
+#contenedor .encabezado{
+    background-color: cornflowerblue;
+    width: 1366px;
+    height: 50px;
+    position: fixed;
+}
+#contenedor .piePagina{
+    position: relative;
+    top: 1805px;
+    background-color: blue;
+    height: 180px;
+}
