@@ -8,14 +8,14 @@ body{
 #contenedor .encabezado{
     background-color: cornflowerblue;
     width: 1366px;
-    height: 50px;
+    height: 60px;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
 }
 #contenedor .piePagina{
     position: relative;
-    top: 1205px;
-    background-color: blue;
+    top: 350px;
+    background-color: rgb(58, 0, 255);
     height: 180px;
 }
 #contenedor .contenido .peliculas .fila1{
@@ -40,6 +40,31 @@ body{
     align-items: center;
     justify-content:center;
     
+}  
+#contenedor .contenido .peliculas .fila3{
+    background-color: aqua;
+    padding: 30px;
+    position: relative;
+    top: 200px;
+    height: 300px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+#contenedor .contenido .peliculas .fila4{
+    background-color: aqua;
+    margin-top: 60px;
+    padding: 30px;
+    position: relative;
+    top: 200px;
+    height: 300px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
 }     
 /*cajas de la fila1*/
 #contenedor .contenido .peliculas .fila1 div{
@@ -54,4 +79,62 @@ body{
     margin: 12px;
     padding: 160px;
     width: 100px;
+}
+/*cajas de la fila3*/
+#contenedor .contenido .peliculas .fila3 div{
+    background-color: black;
+    margin: 12px;
+    padding: 160px;
+    width: 100px;
+}
+/*cajas de la fila4*/
+#contenedor .contenido .peliculas .fila4 div{
+    background-color: black;
+    margin: 12px;
+    padding: 160px;
+    width: 100px;
+}
+/*pie de pagina*/
+#contenedor .piePagina .logo{
+    background-color: black;
+    padding: 40px;
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#contenedor .piePagina .links a{
+    color: azure;
+    text-decoration: none;  
+}
+#contenedor .piePagina .links .link1{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+#contenedor .piePagina .links .link2{
+    position: absolute;
+    top: 120px;
+    left: 140px;
+}
+#contenedor .piePagina .links .link3{
+    position: absolute;
+    top: 120px;
+    left: 180px;
+}
+#contenedor .piePagina .links .link4{
+    position: absolute;
+    top: 120px;
+    left: 285px;
+}
+#contenedor .piePagina .links A:hover{
+    color: rgb(153, 199, 37);
+}
+#contenedor .piePagina .redes{
+    background-color: aqua;
+    padding: 40px;
+    width: 60px;
+    position: absolute;
+    top: 90px;
+    right: 70px;
 }
