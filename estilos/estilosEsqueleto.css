@@ -1,5 +1,7 @@
 body{
     margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 #contenedor{
     background-color: darkgray;
@@ -10,7 +12,7 @@ body{
     width: 1366px;
     height: 60px;
     position: fixed;
-    z-index: 4;
+    z-index: 5;
 }
 #contenedor .piePagina{
     position: relative;
@@ -94,14 +96,38 @@ body{
     padding: 160px;
     width: 100px;
 }
+/*Encabezado*/
+#contenedor .encabezado .logoEncabezado{
+  float: left;
+  margin-left: 10px;
+  margin-top: -5px;
+  height: 5px;  
+}
+#contenedor .encabezado .logoEncabezado h1 a{
+    text-decoration: none; 
+}
+#contenedor .encabezado .menu{
+    float: right;
+    width: 10px;
+    margin-right: 50px;
+    margin-top: 7px;
+}
+
+
 /*pie de pagina*/
 #contenedor .piePagina .logo{
-    background-color: black;
     padding: 40px;
     width: 40px;
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: -30px;
+    left: 15px;
+}
+#contenedor .piePagina .logo h1{
+    width: 140px;
+    height: 30px;
+    display: flex;
+    font-size: 40px;
+    
 }
 #contenedor .piePagina .links a{
     color: azure;
@@ -115,26 +141,45 @@ body{
 #contenedor .piePagina .links .link2{
     position: absolute;
     top: 120px;
-    left: 140px;
+    left: 125px;
 }
 #contenedor .piePagina .links .link3{
     position: absolute;
     top: 120px;
-    left: 180px;
+    left: 160px;
 }
 #contenedor .piePagina .links .link4{
     position: absolute;
     top: 120px;
-    left: 285px;
+    left: 245px;
 }
 #contenedor .piePagina .links A:hover{
     color: rgb(153, 199, 37);
 }
+#contenedor .piePagina .copyright{
+    color: azure;
+    position: absolute;
+    top: 145px;
+    left: 30px;
+}
 #contenedor .piePagina .redes{
     background-color: aqua;
     padding: 40px;
-    width: 60px;
+    width: 160px;
     position: absolute;
-    top: 90px;
-    right: 70px;
+    top: 20px;
+    right: 120px;
+    color: azure;
+}
+#contenedor .piePagina .redes div{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    width: 190px;
+}
+#contenedor .piePagina .redes div a{
+    background-color: yellow;
+    padding: 5px;
+    width: 55px;
+    margin: 2px;
 }
