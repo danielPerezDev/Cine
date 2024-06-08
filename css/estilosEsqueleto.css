@@ -74,6 +74,18 @@ body{
     padding: 100px;
     width: 100px;
 }
+#contenedor .contenido .peliculas .fila1 .pelicula4{
+    margin-right: 85px;
+}
+#contenedor .contenido .peliculas .fila2 .pelicula8{
+    margin-right: 85px;
+}
+#contenedor .contenido .peliculas .fila3 .pelicula12{
+    margin-right: 85px;
+}
+#contenedor .contenido .peliculas .fila4 .pelicula16{
+    margin-right: 85px;
+}
 #contenedor .contenido .peliculas .fila1 div a{
     padding: 10px;
 }
@@ -126,7 +138,7 @@ body{
 }
 #contenedor .encabezado .menu ul li .menu2 .lista2{
     padding-top: 10px;
-    background-color: blue;
+    background-color: darkgray;
     width: 95px;
     height: 160px;
     margin-top: -10px;
@@ -139,7 +151,10 @@ body{
 }
 
 #contenedor .encabezado .menu ul li .menu2 .lista2 li a:hover{
-    background-color: aqua;
+    background-color: #49a98c;
+}
+#contenedor .encabezado .menu ul li .menu2 .lista2 li a:visited{
+    color: white;
 }
 #contenedor .encabezado .menu ul li .menu2 .lista2 li{
     margin-top: 6px;

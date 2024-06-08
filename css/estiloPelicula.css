@@ -1,0 +1,35 @@
+#contenedor .contenido .estructura{
+    background-color: darkgray;
+    height: 800px;
+    position: relative;
+}
+#contenedor{
+    height: 400px;
+}
+#contenedor .contenido .estructura .contenidoPelicula{
+    position: absolute;
+    top: 100px;
+    left: 13%;
+    background-color: grey;
+    padding: 310px;
+    padding-right: 710px;
+    z-index: 1;
+}
+#contenedor .contenido .estructura iframe{
+    position: absolute;
+    left: 13%;
+    top: 100px;
+    z-index: 2;
+}
+#contenedor .contenido .estructura .elegirDatos{
+    position: absolute;
+    background-color: blueviolet;
+    height: 315px;
+    padding-right: 300px;
+    left: 51%;
+    top: 100px;
+    z-index: 1;
+}
+#contenedor .contenido .piePagina{
+    margin-top: -250px;
+}
