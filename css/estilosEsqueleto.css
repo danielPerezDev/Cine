@@ -120,12 +120,14 @@ body{
 /*Encabezado*/
 #contenedor .encabezado .logoEncabezado{
   float: left;
-  margin-left: 10px;
+  margin-left: 35px;
   margin-top: -5px;
   height: 5px;  
+  color: aqua;
 }
 #contenedor .encabezado .logoEncabezado h1 a{
     text-decoration: none; 
+    color: aqua;
 }
 #contenedor .encabezado .menu{
     float: right;
