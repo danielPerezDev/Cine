@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>Inmaculada</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,75 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1lz5tE0Mkh0?si=n9c4HEdxyVynWJbR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option> 
+                                        <option>SALA C</option>
+                                        <option>SALA D</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>CASTELLANO</option>
+                                        <option>ITALIANO</option>
+                                        <option>INGLES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        Cecilia, una mujer de fe devota, recibe una calurosa bienvenida en la perfecta campiña italiana, donde se le ofrece un nuevo papel en un ilustre convento. 
+                        Pero se vuelve más claro para Cecilia que su nuevo hogar alberga oscuros y horribles secretos.  
+                    <p>
+                        <strong>Título Original:</strong>  Immaculate
+                        <br>
+                        <strong>Origen:</strong> USA, Italia
+                        <br>
+                        <strong>Género: </strong>Terror, Misterio. 
+                        <br>
+                        <strong>Director: </strong>Michael Mohan
+                        <br>
+                        <strong>Actores:</strong> Sydney Sweeney, Álvaro Morte, Benedetta Porcaroli, Dora Romano, Giorgio Colangeli, Simona Tabasco, Giampiero Judica.
+                        <br>
+                        <strong>Calificación:</strong> P-16
+                        <br>
+                        <strong>Duración:</strong> 89 min.
+                        <br>
+                        <strong>Distribuidora:</strong> Diamond Films.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +122,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>

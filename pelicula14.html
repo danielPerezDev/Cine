@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>El jardín del deseo</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,76 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wzuJ9tv1eM0?si=_qsliffTrpPYiJ_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option> 
+                                        <option>SALA C</option>
+                                        <option>SALA D</option>
+                                        <option>SALA E</option>
+                                        <option>SALA F</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>CASTELLANO</option>
+                                        <option>INGLES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        Narvel Roth (interpretado por Joel Edgerton) es el minucioso jardinero de los jardines de Gracewood. Narvel dedica su tiempo tanto a cuidar los jardines de la hermosa y antigua finca como a complacer a su patrona, la adinerada viuda Sra. Haverhill (interpretada por Sigourney Weaver). 
+                        El caos irrumpe en la vida austera de Narvel cuando la Sra. Haverhill le exige que acepte como aprendiz a su sobrina-nieta, Maya (interpretada por Quintessa Swindell). La llegada de Maya dejará al descubierto secretos oscuros de un pasado violento que los amenazará a todos.   
+                    <p>
+                        <strong>Título Original:</strong>  Master Gardener
+                        <br>
+                        <strong>Origen:</strong> Australia, USA
+                        <br>
+                        <strong>Género: </strong>Drama, Romance, Thriller. 
+                        <br>
+                        <strong>Director: </strong>Paul Schrader
+                        <br>
+                        <strong>Actores:</strong> Joel Edgerton, Sigourney Weaver, Quintessa Swindell, Esai Morales, Eduardo Losan, Victoria Hill, Amy Le, Timothy McKinney, Samuel Ali, Erika Ashley.
+                        <br>
+                        <strong>Calificación:</strong> P-13
+                        <br>
+                        <strong>Duración:</strong> 111 min.
+                        <br>
+                        <strong>Distribuidora:</strong> Impacto Cine.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +123,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>

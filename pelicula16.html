@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>Intensamente 2</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,77 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xiC2iXTXHxw?si=Bsk11MGHQVg6_woz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option> 
+                                        <option>SALA C</option>
+                                        <option>SALA D</option>
+                                        <option>SALA E</option>
+                                        <option>SALA F</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>CASTELLANO</option>
+                                        <option>INGLES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        La película de Disney y Pixar INTENSA-MENTE 2 vuelve a sumergirse en la mente de la flamante adolescente Riley justo cuando el cuartel general está sufriendo una repentina demolición para hacer sitio a algo totalmente inesperado: ¡nuevas emociones! Alegría, Tristeza, Furia, Temor y Desagrado, 
+                        que llevan mucho tiempo realizando una operación exitosa, no están seguros de cómo sentirse cuando aparece Ansiedad. Y parece que no está sola. Dirigida por Kelsey Mann y producida por Mark Nielsen, INTENSA-MENTE 2 cuenta con una partitura compuesta por Andrea Datzman y 
+                        producida por Michael Giacchino. La película estrena solo en los cines el 13 de junio de 2024.    
+                    <p>
+                        <strong>Título Original:</strong>  Inside Out 2
+                        <br>
+                        <strong>Origen:</strong> USA
+                        <br>
+                        <strong>Género: </strong>Animación, Familia. 
+                        <br>
+                        <strong>Director: </strong>Kelsey Mann
+                        <br>
+                        <strong>Actores:</strong> Amy Poehler.
+                        <br>
+                        <strong>Calificación:</strong> ATP
+                        <br>
+                        <strong>Duración:</strong> 96 min.
+                        <br>
+                        <strong>Distribuidora:</strong> Disney.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +124,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>

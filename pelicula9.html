@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>Amigos imaginarios</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,76 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WXHBfb87hDA?si=-4OgGynBJukHVS86" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option> 
+                                        <option>SALA C</option>
+                                        <option>SALA D</option>
+                                        <option>SALA G</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>CASTELLANO</option>
+                                        <option>INGLES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        Del escritor y director John Krasinski, Amigos Imaginarios trata sobre una niña que descubre que puede ver a los amigos imaginarios de las personas –y lo que puede hacer con ese superpoder– 
+                        mientras se embarca en una aventura mágica para reconectar a los AMIs olvidados con sus niños. Amigos Imaginarios está protagonizada por Ryan Reynolds, John Krasinski, 
+                        Cailey Fleming y Fiona Shaw junto a muchos personajes maravillosamente únicos que reflejan el increíble poder de la imaginación de un niño. 
+                    <p>
+                        <strong>Título Original:</strong> IF 
+                        <br>
+                        <strong>Origen:</strong> USA
+                        <br>
+                        <strong>Género: </strong>Comedia, Fantasía, Drama, Familia, Animación. 
+                        <br>
+                        <strong>Director: </strong>John Krasinski.
+                        <br>
+                        <strong>Actores:</strong> Ryan Reynolds, John Krasinski, Cailey Fleming, Phoebe Waller-Bridge, Louis Gossett Jr., Steve Carell, Fiona Shaw, Bobby Moynihan, Alan Kim, Matt Damon.
+                        <br>
+                        <strong>Calificación:</strong> ATP
+                        <br>
+                        <strong>Duración:</strong> 104 min.
+                        <br>
+                        <strong>Distribuidora:</strong> UIP.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +123,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>

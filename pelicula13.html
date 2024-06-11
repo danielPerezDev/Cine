@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>Godzilla y Kong: El nuevo imperio</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,77 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rmoneJ_797s?si=RUcyuzczUOl-XdXb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option> 
+                                        <option>SALA C</option>
+                                        <option>SALA D</option>
+                                        <option>SALA E</option>
+                                        <option>SALA F</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>CASTELLANO</option>
+                                        <option>INGLES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        ¡La batalla épica continúa! La película de Legendary Pictures continúa el explosivo enfrentamiento de “Godzilla vs. Kong” con una aventura completamente nueva que enfrenta al todopoderoso Kong y 
+                        al temible Godzilla contra una colosal amenaza no descubierta escondida dentro de nuestro mundo, desafiando su propia existencia y la nuestra. “Godzilla y Kong: El nuevo imperio” profundiza en las historias de estos Titanes y sus orígenes, 
+                        así como en los misterios de la Isla Calavera y más allá, mientras descubre la batalla mítica que ayudó a forjar a estos seres extraordinarios y los unió a la humanidad para siempre.  
+                    <p>
+                        <strong>Título Original:</strong>  Godzilla x Kong: The New Empire
+                        <br>
+                        <strong>Origen:</strong> USA
+                        <br>
+                        <strong>Género: </strong>Acción, Ciencia Ficción, Aventura. 
+                        <br>
+                        <strong>Director: </strong>Adam Wingard
+                        <br>
+                        <strong>Actores:</strong> Dan Stevens, Rebecca Hall, Brian Tyree Henry, Kaylee Hottle, Fala Chen, Alex Ferns, Rachel House, Mercy Cornwall.
+                        <br>
+                        <strong>Calificación:</strong> P-13
+                        <br>
+                        <strong>Duración:</strong> 115 min.
+                        <br>
+                        <strong>Distribuidora:</strong> Warner Bros.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +124,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>

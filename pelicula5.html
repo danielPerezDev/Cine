@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>Observados</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,71 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sIJh6KkKvxU?si=YpawZ5Y8VCQ2buPZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA B</option>
+                                        <option>SALA F</option> 
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>INGLES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        Del productor M. Night Shyamalan llega “Observados”, escrita y dirigida por Ishana Night Shyamalan y basada en la novela de A.M. Brillar. La película sigue a Mina, una artista de 28 años, que queda varada en un extenso bosque virgen en el oeste de Irlanda. 
+                        Cuando Mina encuentra refugio, sin saberlo, queda atrapada junto a tres extraños que son observados y acechados por criaturas misteriosas cada noche. No puedes verlos, pero ellos ven todo.
+                    <p>
+                        <strong>Título Original:</strong> The Watchers
+                        <br>
+                        <strong>Origen:</strong> USA
+                        <br>
+                        <strong>Género: </strong>Misterio, Thriller, Terror. 
+                        <br>
+                        <strong>Director: </strong>Ishana Night Shyamalan.
+                        <br>
+                        <strong>Actores:</strong> Dakota Fanning, Georgina Campbell, Olwen Fouéré, Siobhan Hewlett, Alistair Brammer, Hannah Howland, Oliver Finnegan, Charles Camrose, Kya Brame, Anthony Morris
+                        <br>
+                        <strong>Calificación:</strong> P-13
+                        <br>
+                        <strong>Duración:</strong> 102 min.
+                        <br>
+                        <strong>Distribuidora:</strong> Warner Bros.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +118,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>

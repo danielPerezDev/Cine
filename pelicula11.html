@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>Una jungla de locura 2</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,74 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SnxC4MvtrHs?si=MXIcvnRjyo1Aqv5W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option> 
+                                        <option>SALA C</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>CASTELLANO</option>
+                                        <option>FRANCES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        ¿A quién llamas para que te ayude cuando un misterioso supervillano cubre la selva de espuma rosa que explota al contacto con el agua? 
+                        ¡A la pandilla de la jungla! A menos de un mes de la temporada de lluvias, la carrera contrarreloj está en marcha. Desde el Polo Norte hasta el Lejano Oriente, 
+                        atravesando montañas, desiertos y océanos, nuestros héroes tendrán que recorrer el mundo en busca de un antídoto, ¡lejos de su jungla favorita! Secuela de 'The Jungle Bunch' (2017). 
+                    <p>
+                        <strong>Título Original:</strong> Les As de la jungle 2 : Opération tour du monde
+                        <br>
+                        <strong>Origen:</strong> Francia
+                        <br>
+                        <strong>Género: </strong>Animación, Aventura, Comedia, Familia. 
+                        <br>
+                        <strong>Director: </strong>Benoît Somville, Yannick Moulin, Laurent Bru
+                        <br>
+                        <strong>Actores:</strong> Philippe Bozo, Laurent Morteau, Pascal Casanova, Céline Monsarrat, Emmanuel Curtil, Paul Borne, Léopoldine Serre, Frédéric Cerdal.
+                        <br>
+                        <strong>Calificación:</strong> ATP
+                        <br>
+                        <strong>Duración:</strong> 89 min.
+                        <br>
+                        <strong>Distribuidora:</strong> BF Paris.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +121,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>

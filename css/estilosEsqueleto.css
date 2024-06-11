@@ -89,6 +89,22 @@ body{
 #contenedor .contenido .peliculas .fila1 div a{
     padding: 10px;
 }
+#contenedor .contenido .peliculas .fila1 div a img{
+    height: 228px;
+    width: 154px;
+}
+#contenedor .contenido .peliculas .fila2 div a img{
+    height: 228px;
+    width: 154px;
+}
+#contenedor .contenido .peliculas .fila3 div a img{
+    height: 228px;
+    width: 154px;
+}
+#contenedor .contenido .peliculas .fila4 div a img{
+    height: 228px;
+    width: 154px;
+}
 /*cajas de la fila2*/
 #contenedor .contenido .peliculas .fila2 div{
     

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Vidas pasadas</title>
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
+        <script src="javascript/menu.js"></script>
+    </head>
+    <body onload="Nodesplegar()">
+        <div id="contenedor">
+          <div class="encabezado">
+                <div class="logoEncabezado">
+                    <h1><a href="PaginaPrincipal.html"><strong><span>/</span></strong><strong><span>Y</span></strong><strong><span>o</span></strong><strong><span>u</span></strong><strong><span>C</span>I<span>N</span><span>E</span></strong></a></h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                                <a onclick="desplegar()">
+                                    <img src="/Cine/imagenes/menu_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="menu">
+
+                                </a>
+                            <div class="menu2" id="menu2">
+                                <ul class="lista2">
+                                    <li><a onclick="Nodesplegar()" style="color: white;">CERRAR MENU</a></li>
+                                    <li><a href="">AJUSTE</a></li>
+                                    <li><a href="">PROXIMOS ESTRENOS</a></li>
+                                    <li><a href="">¿QUIENES SOMOS?</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N6T82e3cJ54?si=4TOSH8pzRsp4lqD7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option>
+                                        <option>SALA C</option>
+                                        <option>SALA D</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>ESPAÑOL</option>
+                                        <option>INGLES</option>
+                                        <option>COREANO</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        La familia de Nora emigra a Canadá cuando ella tiene 10 años. Pierde el contacto con su amor de la infancia. Muchos años después, 
+                        cuando Nora está estudiando teatro en Nueva York, se reencuentra con él online. 
+                    </p>
+                    <p>
+                        <strong>Título Original:</strong> Past lives
+                        <br>
+                        <strong>Origen:</strong> Corea del Sur
+                        <br>
+                        <strong>Género: </strong>Drama, Romance. 
+                        <br>
+                        <strong>Director: </strong>Celine Song.
+                        <br>
+                        <strong>Actores:</strong> Greta Lee, Teo Yoo, John Magaro, Moon Seung-ah, Yim Seung-min, Jojo T. Gibbs, Emily Cass McDonnell, Federico Rodriguez, Kristen Sieh, Yoon Ji-hye.
+                        <br>
+                        <strong>Calificación:</strong> ATP
+                        <br>
+                        <strong>Duración:</strong> 106 min.
+                        <br>
+                        <strong>Distribuidora:</strong> IMAGEM FILMS
+                    </p>
+                </div>
+            </div> 
+            <div class="piePagina">
+                <div class="logo">
+                    <h1><strong>/</strong><strong>Y</strong><strong>o</strong><strong>u</strong><strong>C</strong><strong>I</strong><strong>NE</strong></h1>
+                </div>
+                <div class="links">
+                    <a href="" class="link1">AVISO LEGAL</a>
+                    <a href="" class="link2">FAQ</a>
+                    <a href="" class="link3">PRIVACIDAD</a>
+                    <a href="" class="link4">COOKIES</a>
+                </div>
+                <div class="copyright">Copyright &copy; 2024 - Todos los derechos reservados</div>
+                <div class="redes">
+                    <p>NUESTRAS REDES</p>
+                    <div>
+                        <a href="https://x.com/?lang=es" target="_blank" class="X"><img src="" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="facebook"><img src="" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+      
+    </body>
+</html>

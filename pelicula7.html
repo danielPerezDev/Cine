@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>/YouCINE</title>
+        <title>Ghost: Rite Here Rite Now </title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
         <script src="javascript/menu.js"></script>
     </head>
     <body onload="Nodesplegar()">
@@ -31,7 +32,74 @@
                 </div>
             </div>
             <div class="contenido">
-                
+                <div class="elegirPelicula">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GJVgZX-vQUc?si=Uowz4e3er-1b8KI2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <form>
+                        <table id="tabla" height="200">
+                            <tr align="center">
+                                <th colspan="2">ELEGIR PELICULA:</th>
+                            </tr>
+                            <tr align="center">
+                                <td>SALAS:</td>
+                                <td>
+                                    <select name="sala" id="sala">
+                                        <option selected></option>
+                                        <option>SALA A</option>
+                                        <option>SALA B</option> 
+                                        <option>SALA C</option>
+                                        <option>SALA D</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>IDIOMA:</td>
+                                <td>
+                                    <select name="idioma" id="idioma">
+                                        <option selected></option>
+                                        <option>INGLES</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>SUBTITULOS:</td>
+                                <td>
+                                    <input type="radio" name="respuesta" id="respuesta">SI
+                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="info">
+                    <h2>FICHA TECNICA DE LA PELICULA:</h2>
+                    <h2>Sinopsis:</h2>
+                    <p>
+                        Rodada durante los dos conciertos de GHOST en el Kia Forum de Los Ángeles, RITE HERE RITE NOW es mucho más que un espectáculo musical llevado al cine. 
+                        El primer largometraje de GHOST combina fascinantes actuaciones en directo con una historia narrativa que retoma los hilos argumentales de la larga serie de episodios web de la banda. El resultado es una mezcla fantasmagórica absolutamente única: Las interpretaciones en directo de los temas favoritos de los cinco álbumes de GHOST, 
+                        así como de "Mary On A Cross", con disco de platino de la RIAA, entre otros, se entremezclan con los debuts en la gran pantalla de algunos rostros familiares para las legiones de fans de la banda. Tanto si eres un devoto discípulo que busca revivir los recuerdos más preciados del espectáculo en directo de GHOST como si eres un curioso no iniciado, 
+                        RITE HERE RITE NOW te dejará completamente hechizado y cautivado por este grandilocuente pero íntimo retrato cinematográfico de GHOST. 
+                    <p>
+                        <strong>Título Original:</strong> Rite Here Rite Now
+                        <br>
+                        <strong>Origen:</strong> USA, Suecia
+                        <br>
+                        <strong>Género: </strong>Música. 
+                        <br>
+                        <strong>Director: </strong>Tobias Forge, Alex Ross Perry.
+                        <br>
+                        <strong>Actores:</strong> Ghost, Tobias Forge, Maralyn Facey, Alan Ursillo, Ashley McBride, Kevin Kaufmann
+                        <br>
+                        <strong>Calificación:</strong> N/A
+                        <br>
+                        <strong>Duración:</strong> 145 min.
+                        <br>
+                        <strong>Distribuidora:</strong> Trafalgar Releasing.
+                    </p>
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -53,7 +121,8 @@
                     </div>
                 </div>
             </div>
-          </div>
+          
         </div>
+      
     </body>
 </html>
