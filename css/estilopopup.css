@@ -1,0 +1,32 @@
+#cartelConfirmar{
+    position: fixed;
+    left: 350px;
+    top: 150px;
+    width: 60%;
+    z-index: 4;
+    display: f;
+}
+#cartelConfirmar #contenidoCartel{
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-left: 200px;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+}
+#cartelConfirmar #contenidoCartel p{
+    margin-left: 30px;
+}
+#cartelConfirmar #contenidoCartel p input{
+    margin-top: 20px;
+    width: 50px;
+    background-color: burlywood;
+}
+#cartelConfirmar #contenidoCartel p input#cancelar{
+    margin-left: 130px;
+}
+#cartelConfirmar #contenidoCartel h2{
+    margin-left: 30px;
+}

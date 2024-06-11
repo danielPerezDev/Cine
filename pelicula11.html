@@ -4,9 +4,22 @@
         <title>Una jungla de locura 2</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/Cine/css/estiloPelicula.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estilopopup.css" media="screen" />
         <script src="javascript/menu.js"></script>
+        <script src="javascript/popup.js"></script>
     </head>
     <body onload="Nodesplegar()">
+        <div id="cartelConfirmar" style="display: none">
+            <div id="contenidoCartel">
+                <h2>ADVERTENCIA:</h2>
+                <p>
+                    Perdera todos los datos de la "Eleccion pelicula", ¿Desea Continuar?
+                     <br>
+                    <a href=""><input type="button" value="Si" id="confirmar"></a>
+                    <input type="button" value="No" onclick="Nocartel()" id="cancelar">
+                </p>
+            </div>
+        </div>
         <div id="contenedor">
           <div class="encabezado">
                 <div class="logoEncabezado">
@@ -69,8 +82,19 @@
                                 </td>
                             </tr>
                             <tr align="center">
-                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Enviar"></td>
-                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego"></td>
+                                <td>HORARIOS:</td>
+                                <td>
+                                    <select id="horario">
+                                        <option selected></option>
+                                        <option>12:00 hs</option>
+                                        <option>14:00 hs</option>
+                                        <option>17:00 hs</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Siguientes"></td>
+                                <td><input type="button" name="juego" id="juego" value="Jugar Minijuego" onclick="cartel()"></td>
                             </tr>
                         </table>
                     </form>
