@@ -7,8 +7,10 @@
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilopopup.css" media="screen" />
         <script src="javascript/menu.js"></script>
         <script src="javascript/popup.js"></script>
+        <script src="javascript/funcionesHorarios.js"></script>
+        <script src="javascript/funcionesSalas.js"></script>
     </head>
-    <body onload="Nodesplegar()">
+    <body>
         <div id="cartelConfirmar" style="display: none">
             <div id="contenidoCartel">
                 <h2>ADVERTENCIA:</h2>
@@ -32,7 +34,7 @@
                                     <img src="/Cine/imagenes/menu_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="menu">
 
                                 </a>
-                            <div class="menu2" id="menu2">
+                            <div class="menu2" id="menu2" style="display: none;">
                                 <ul class="lista2">
                                     <li><a onclick="Nodesplegar()" style="color: white;">CERRAR MENU</a></li>
                                     <li><a href="">AJUSTE</a></li>
@@ -56,10 +58,10 @@
                                 <td>SALAS:</td>
                                 <td>
                                     <select name="sala" id="sala">
-                                        <option selected></option>
-                                        <option>SALA A</option>
-                                        <option>SALA B</option> 
-                                        <option>SALA C</option>
+                                        <option selected onclick="noFecha()"></option>
+                                        <option onclick="verFecha3()">SALA A</option>
+                                        <option onclick="verFecha2()">SALA B</option> 
+                                        <option onclick="verFecha1()">SALA C</option>
                                     </select>
                                 </td>
                             </tr>
@@ -81,14 +83,43 @@
                                     <input type="radio" name="respuesta" id="respuesta">NO
                                 </td>
                             </tr>
-                            <tr align="center">
+                            <tr align="center" id="dias" style="display: none;">
+                                <td>DIAS:</td>
+                                <td>
+                                    <select>
+                                        <option selected onclick="noElegirHorario()"></option>
+                                        <option onclick="elegirHorario1()" id="opcion1">28/06</option>
+                                        <option onclick="elegirHorario2()" id="opcion2">01/07</option>
+                                        <option onclick="elegirHorario3()" id="opcion3">02/07</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center" style="display: none" id="horario1">
+                                <td>HORARIOS:</td>
+                                <td>
+                                    <select id="horario">
+                                        <option selected></option>
+                                        <option>19:00 hs</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center" style="display: none" id="horario2">
                                 <td>HORARIOS:</td>
                                 <td>
                                     <select id="horario">
                                         <option selected></option>
                                         <option>12:00 hs</option>
-                                        <option>14:00 hs</option>
-                                        <option>17:00 hs</option>
+                                        <option>18:00 hs</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr align="center" style="display: none" id="horario3">
+                                <td>HORARIOS:</td>
+                                <td>
+                                    <select id="horario">
+                                        <option selected></option>
+                                        <option>15:00 hs</option>
+                                        <option>18:00 hs</option>
                                     </select>
                                 </td>
                             </tr>
