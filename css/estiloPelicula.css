@@ -1,12 +1,12 @@
 #contenedor{
-    height: 1100px;
+    height: 1200px;
 }
 #contenedor .contenido{
     background-color: black;
     position: relative;
     top:100px;
     width: 1200px;
-    height: 800px;
+    height: 900px;
     margin-left: 85px;
 }
 #contenedor .contenido .elegirPelicula{
@@ -74,4 +74,56 @@
     color: red;
     font-size: 30px;
     border-radius: 5px;
+}
+#contenedor .contenido .pregunta{
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 200px;
+    width: 800px;
+    height: 200px;
+    background-color: aquamarine;
+}
+#contenedor .contenido .pregunta p{
+    margin-left: 30px;
+    margin-top: 80px;
+    font-size: 20px;
+}
+#contenedor .contenido .respuesta{
+    position: absolute;
+    top: 400px;
+    left: 390px;
+    height: 100px;
+    width: 400px;
+    background-color: aquamarine;
+}
+#contenedor .contenido .respuesta p{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+#contenedor .contenido .respuesta2{
+    position: absolute;
+    top: 550px;
+    left: 390px;
+    height: 100px;
+    width: 400px;
+    background-color: aquamarine;
+}
+#contenedor .contenido .respuesta2 p{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+#contenedor .contenido .respuesta3{
+    position: absolute;
+    top: 700px;
+    left: 390px;
+    height: 100px;
+    width: 400px;
+    background-color: aquamarine;
+}
+#contenedor .contenido .respuesta3 p{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 35px;
 }

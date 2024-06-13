@@ -7,6 +7,12 @@
         <script src="/Cine/javascript/minijuego.js"></script>
     </head>
     <body onload="temporizador()">
+        <div id="cartelPerdiste" style="display: none;">
+
+        </div>
+        <div id="cartelGanaste" style="display: none;">
+
+        </div>
         <div id="contenedor">
           <div class="encabezado">
                 <div class="logoEncabezado">
@@ -40,7 +46,39 @@
                         <div class="seg" id="seg">00</div>
                     </div>
                 </div>
-                <div></div>
+                <div class="pregunta">
+                    <p>
+                        1) ¿Cual es el color del auto que conducen los protagonistas
+                        al principio del trailer?
+                    </p>
+                </div>
+                <div class="respuesta" id="respuesta" onmouseover="sombraRespuesta()" onmouseout="noSombraRespuesta()">
+                    <p>
+                        A) Es de color amarillo
+                    </p>
+                </div>
+                <div class="respuesta2" id="respuesta2" onmouseover="sombraRespuesta2()" onmouseout="noSombraRespuesta2()">
+                    <p>
+                        B) Es de color verde
+                    </p>
+                </div>
+                <div class="respuesta3" id="respuesta3" onmouseover="sombraRespuesta3()" onmouseout="noSombraRespuesta3()">
+                    <p>
+                        C) Es de color negro
+                    </p>
+                </div>
+                <div class="pregunta" style="display: none;">
+
+                </div>
+                <div class="respuesta" style="display: none;">
+
+                </div>
+                <div class="respuesta" style="display: none;">
+
+                </div>
+                <div class="respuesta" style="display: none;">
+
+                </div>
             </div> 
             <div class="piePagina">
                 <div class="logo">

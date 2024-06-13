@@ -35,5 +35,32 @@ function temporizador(){
         }
         document.getElementById("min").innerHTML = $txtMinutos;
     }
-    setInterval(cargarSegundos,1000);   
+    setInterval(cargarSegundos,1000);  
+    if($txtMinutos==0 && $txtSegundo==0){
+
+    } 
+}
+function sombraRespuesta(){
+    var $respuesta = document.getElementById("respuesta");
+    $respuesta.style="box-shadow:10px 10px 8px 5px white;";
+}
+function noSombraRespuesta(){
+    var $respuesta = document.getElementById("respuesta");
+    $respuesta.style="box-shadow:none;";
+}
+function sombraRespuesta2(){
+    var $respuesta = document.getElementById("respuesta2");
+    $respuesta.style="box-shadow:10px 10px 8px 5px white;";
+}
+function noSombraRespuesta2(){
+    var $respuesta = document.getElementById("respuesta2");
+    $respuesta.style="box-shadow:none;";
+}
+function sombraRespuesta3(){
+    var $respuesta = document.getElementById("respuesta3");
+    $respuesta.style="box-shadow:10px 10px 8px 5px white;";
+}
+function noSombraRespuesta3(){
+    var $respuesta = document.getElementById("respuesta3");
+    $respuesta.style="box-shadow:none;";
 }
