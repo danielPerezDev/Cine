@@ -9,8 +9,28 @@
         <script src="javascript/popup.js"></script>
         <script src="javascript/funcionesHorarios.js"></script>
         <script src="javascript/funcionesSalas.js"></script>
+        <script src="javascript/localStorage.js"></script>
     </head>
     <body>
+        <div id="cartelDatos" style="display: none;">
+            <div id="contenidoDatos">
+                <h2>CONFIRMAR DATOS:</h2>
+                <p>
+                    Dia: <span id="mostrarDias"></span>
+                    <br>
+                    Sala: <span id="mostrarSala"></span>
+                    <br>
+                    Horario: <span id="mostrarHorario"></span>
+                    <br>
+                    Subtitulo: <span id="mostrarSubtitulo"></span>
+                    <br>
+                    Idioma: <span id="mostrarIdioma"></span>
+                    <br>
+                    <a href=""><button>Aceptar</button></a>
+                    <button onclick="cerrarCartelDatos()">Cancelar</button>
+                </p>
+            </div>
+        </div>
         <div id="cartelConfirmar" style="display: none">
             <div id="contenidoCartel">
                 <h2>ADVERTENCIA:</h2>
@@ -58,9 +78,8 @@
                                 <td>SALAS:</td>
                                 <td>
                                     <select name="sala" id="sala">
-                                        <option selected onclick="noFecha()"></option>
-                                        <option onclick="verFecha1()">SALA A</option>
-                                        <option onclick="verFecha2()">SALA E</option>
+                                        <option selected>SALA A</option>
+                                        <option >SALA E</option>
                                     </select>
                                 </td>
                             </tr>
@@ -68,8 +87,7 @@
                                 <td>IDIOMA:</td>
                                 <td>
                                     <select name="idioma" id="idioma">
-                                        <option selected></option>
-                                        <option>INGLES</option>
+                                        <option selected>INGLES</option>
                                     </select>
                                 </td>
                             </tr>
@@ -77,51 +95,30 @@
                                 <td>SUBTITULOS:</td>
                                 <td>
                                     <input type="radio" name="respuesta" id="respuesta">SI
-                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                    <input type="radio" name="respuesta" id="respuesta" checked>NO
                                 </td>
                             </tr>
-                            <tr align="center" id="dias" style="display: none;">
+                            <tr align="center" id="dias">
                                 <td>DIAS:</td>
                                 <td>
-                                    <select>
-                                        <option selected onclick="noElegirHorario()"></option>
-                                        <option onclick="elegirHorario1()" id="opcion1">30/06</option>
-                                        <option onclick="elegirHorario2()" id="opcion2">05/07</option>
-                                        <option onclick="elegirHorario3()" id="opcion3">12/07</option>
+                                    <select id="dia">
+                                        <option selected>30/06</option>
+                                        <option >05/07</option>
+                                        <option >12/07</option>
                                     </select>
                                 </td>
                             </tr>
-                            <tr align="center" style="display: none" id="horario1">
+                            <tr align="center" id="horario1">
                                 <td>HORARIOS:</td>
                                 <td>
                                     <select id="horario">
-                                        <option selected></option>
-                                        <option>19:00 hs</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr align="center" style="display: none" id="horario2">
-                                <td>HORARIOS:</td>
-                                <td>
-                                    <select id="horario">
-                                        <option selected></option>
-                                        <option>12:00 hs</option>
-                                        <option>18:00 hs</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr align="center" style="display: none" id="horario3">
-                                <td>HORARIOS:</td>
-                                <td>
-                                    <select id="horario">
-                                        <option selected></option>
-                                        <option>15:00 hs</option>
-                                        <option>20:00 hs</option>
+                                        <option selected>19:00 hs</option>
+                                        <option>22:45 hs</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr align="center">
-                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Siguientes"></td>
+                                <td><input type="button" name="salidaDatos" id="salidaDatos" value="Siguiente" onclick="guardarDatos()"></td>
                                 <td><input type="button" name="juego" id="juego" value="Jugar Minijuego" onclick="cartel()"></td>
                             </tr>
                         </table>

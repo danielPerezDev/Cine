@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>/YouCINE</title>
+        <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/transaccion.css" media="screen" />
+        <script src="../javascript/menu.js"></script>
+        <script src="../javascript/funcionesImagenes.js"></script>
+        <script src="../javascript/localStorage.js"></script>
+    </head>
+    <body onload="obtenerDatos()">
+        <div id="contenedor">
+            <div class="encabezado">
+                    <div class="logoEncabezado">
+                        <h1><a href="/Cine/PaginaPrincipal.html"><strong><span>/</span></strong><strong><span>Y</span></strong><strong><span>o</span></strong><strong><span>u</span></strong><strong><span>C</span>I<span>N</span><span>E</span></strong></a></h1>
+                    </div>
+            </div>
+            <div class="contenido">
+                <span><p>1- ELEGIR CANTIDAD TICKET:</p></span>
+                <div id="informacion">
+                    <div id="contenidoInformacion">
+                        Dia: <span id="mostrarDia"></span>
+                        <br><br>
+                        Sala: <span id="mostrarSala"></span>
+                        <br><br>
+                        Horario: <span id="mostrarHorario"></span>
+                        <br><br>
+                        Subtitulo: <span id="mostrarSubtitulo"></span>
+                        <br><br>
+                        Idioma: <span id="mostrarIdioma"></span>
+                    </div>
+                </div>
+                <div id="total">
+                    <span id="titulo"><strong>Su compra:</strong></span>
+                    <div id="totalAPagar">
+                        <div id="contenidoAPagar">
+                            Cantidad Entradas Normales: <span id="cantidad">0</span>
+                            <br>
+                            Subtotal: $<span id="TotalEntradaAdulto">0</span>
+                            <br>
+                            Cantidad Entradas Adultos Mayores: <span id="cantidad2">0</span>
+                            <br>
+                            Subtotal: $<span id="totalEntradaMayor">0</span>
+                            <br>
+                            Cantidad Entradas Niños: <span id="cantidad3">0</span>
+                            <br>
+                            Subtotal: $<span id="totalEntradaNiño">0</span>
+                            <p>Total Entradas: <span id="totalEntradas">0</span></p>
+                            <p id="monto">Total a pagar: $<span id="totalPagar">0</span></p>
+                            <a href="asiento.html"><button id="paso1" onclick="guardarDatos2()">Siguiente</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="comprarTicket">
+                    <div id="contenidoTicket">
+                        <span id="limite">Limite de entradas: 6</span>
+                        <span id="tipoTicket">TICKET</span>
+                        <span id="entradaAdulto">General</span>
+                        <span id="entradaMayor">Adulto Mayor (+70 años)</span>
+                        <span id="entradaNiño">Niño (de 3 a 12 años)</span>
+                        <span id="costoTicket">COSTO</span>
+                        <span id="precio1">$4000</span>
+                        <span id="precio2">$2000</span>
+                        <span id="precio3">$1000</span>
+                        <span id="cantidadTicket">CANTIDAD</span>
+                        <button id="restarTicket" onclick="calcularEntradaAdulto2()">-</button>
+                        <input type="text" id="mostrarCantidadTicket" value="0" min="0" max="6">
+                        <button id="sumarTicket" onclick="calcularEntradaAdulto()">+</button>
+                        <button id="restarTicket2" onclick="calcularEntradaMayor2()">-</button>
+                        <input type="text" id="mostrarCantidadTicket2" value="0" min="0" max="6">
+                        <button id="sumarTicket2" onclick="calcularEntradaMayor()">+</button>
+                        <button id="restarTicket3" onclick="calcularEntradaNinio2()">-</button>
+                        <input type="text" id="mostrarCantidadTicket3" value="0" min="0" max="6">
+                        <button id="sumarTicket3" onclick="calcularEntradaNinio()">+</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="piePagina">
+                <div class="logo">
+                    <h1><strong>/</strong><strong>Y</strong><strong>o</strong><strong>u</strong><strong>C</strong><strong>I</strong><strong>NE</strong></h1>
+                </div>
+                <div class="links">
+                    <a href="" class="link1">AVISO LEGAL</a>
+                    <a href="" class="link2">FAQ</a>
+                    <a href="" class="link3">PRIVACIDAD</a>
+                    <a href="" class="link4">COOKIES</a>
+                </div>
+                <div class="copyright">Copyright &copy; 2024 - Todos los derechos reservados</div>
+                <div class="redes">
+                    <p>NUESTRAS REDES</p>
+                    <div>
+                        <a href="https://x.com/?lang=es" target="_blank" class="X"><img src="" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="facebook"><img src="" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

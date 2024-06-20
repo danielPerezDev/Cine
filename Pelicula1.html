@@ -7,11 +7,30 @@
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilopopup.css" media="screen" />
         <script src="javascript/menu.js"></script>
         <script src="javascript/popup.js"></script>
-        <script src="javascript/funcionesHorarios.js"></script>
         <script src="javascript/funcionesSalas.js"></script>
         <script src="javascript/minijuego.js"></script>
+        <script src="javascript/localStorage.js"></script>
     </head>
     <body>
+        <div id="cartelDatos" style="display: none;">
+            <div id="contenidoDatos">
+                <h2>CONFIRMAR DATOS:</h2>
+                <p>
+                    Dia: <span id="mostrarDias"></span>
+                    <br>
+                    Sala: <span id="mostrarSala"></span>
+                    <br>
+                    Horario: <span id="mostrarHorario"></span>
+                    <br>
+                    Subtitulo: <span id="mostrarSubtitulo"></span>
+                    <br>
+                    Idioma: <span id="mostrarIdioma"></span>
+                    <br>
+                    <a href="/Cine/transaccion/ticket.html"><button>Aceptar</button></a>
+                    <button onclick="cerrarCartelDatos()">Cancelar</button>
+                </p>
+            </div>
+        </div>
         <div id="cartelConfirmar" style="display: none">
             <div id="contenidoCartel">
                 <h2>ADVERTENCIA:</h2>
@@ -50,7 +69,7 @@
             <div class="contenido">
                 <div class="elegirPelicula">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/hRFY_Fesa9Q?si=tVgkTqyERLYX98uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <form>
+                    <form id="formulario">
                         <table id="tabla" height="200">
                             <tr align="center">
                                 <th colspan="2">ELEGIR PELICULA:</th>
@@ -59,10 +78,9 @@
                                 <td>SALAS:</td>
                                 <td>
                                     <select name="sala" id="sala">
-                                        <option selected onclick="noFecha()"></option>
-                                        <option onclick="verFecha2()">SALA Y</option>
-                                        <option onclick="verFecha3()">SALA P</option>
-                                        <option onclick="verFecha1()">SALA T</option>
+                                        <option selected>SALA Y</option>
+                                        <option>SALA P</option>
+                                        <option>SALA T</option>
                                     </select>
                                 </td>
                             </tr>
@@ -70,8 +88,7 @@
                                 <td>IDIOMA:</td>
                                 <td>
                                     <select name="idioma" id="idioma">
-                                        <option selected></option>
-                                        <option>ESPAÑOL</option>
+                                        <option selected>ESPAÑOL</option>
                                         <option>INGLES</option>
                                         <option>CASTELLANO</option>
                                     </select>
@@ -81,52 +98,32 @@
                                 <td>SUBTITULOS:</td>
                                 <td>
                                     <input type="radio" name="respuesta" id="respuesta">SI
-                                    <input type="radio" name="respuesta" id="respuesta">NO
+                                    <input type="radio" name="respuesta" id="respuesta" checked>NO
                                 </td>
                             </tr>
-                            <tr align="center" id="dias" style="display: none;">
+                            <tr align="center" id="dias">
                                 <td>DIAS:</td>
                                 <td>
-                                    <select>
-                                        <option selected onclick="noElegirHorario()"></option>
-                                        <option onclick="elegirHorario1()" id="opcion1">19/07</option>
-                                        <option onclick="elegirHorario2()" id="opcion2">20/07</option>
-                                        <option onclick="elegirHorario3()" id="opcion3">03/08</option>
+                                    <select name="dia" id="dia">
+                                        <option selected>19/07</option>
+                                        <option>20/07</option>
+                                        <option>03/08</option>
                                     </select>
                                 </td>
                             </tr>
-                            <tr align="center" style="display: none" id="horario1">
+                            <tr align="center" id="horario1">
                                 <td>HORARIOS:</td>
                                 <td>
                                     <select id="horario">
-                                        <option selected></option>
-                                        <option>21:15 hs</option>
+                                        <option selected>15:10 hs</option>                                        
+                                        <option>21:10 hs</option>
+                                        <option>22:45 hs</option>
                                         <option>23:00 hs</option>
                                     </select>
                                 </td>
                             </tr>
-                            <tr align="center" style="display: none" id="horario2">
-                                <td>HORARIOS:</td>
-                                <td>
-                                    <select id="horario">
-                                        <option selected></option>
-                                        <option>13:40 hs</option>
-                                        <option>19:25 hs</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr align="center" style="display: none" id="horario3">
-                                <td>HORARIOS:</td>
-                                <td>
-                                    <select id="horario">
-                                        <option selected></option>
-                                        <option>15:10 hs</option>
-                                        <option>22:45 hs</option>
-                                    </select>
-                                </td>
-                            </tr>
                             <tr align="center">
-                                <td><input type="submit" name="salidaDatos" id="salidaDatos" value="Siguiente"></td>
+                                <td><input type="button" name="salidaDatos" id="salidaDatos" value="Siguiente" onclick="guardarDatos()"></td>
                                 <td><input type="button" name="juego" id="juego" value="Jugar Minijuego" onclick="cartel()"></td>
                             </tr>
                         </table>

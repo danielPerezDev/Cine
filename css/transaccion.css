@@ -1,0 +1,277 @@
+#contenedor{
+    height: 1200px;
+}
+#contenedor h2{
+    position: relative;
+    left: 530px;
+    top: 100px;
+}
+#contenedor .contenido{
+    position: relative;
+    top: 130px;
+    left: 80px;
+    width: 1200px;
+    height: 850px;
+    background-color: aqua;
+}
+#contenedor .contenido span{
+    position: absolute;
+    top: 10px;
+    left: 470px;
+    font-size: 20px;
+}
+#contenedor .contenido #informacion{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+    border-style: inset;
+    border-color: greenyellow;
+}
+#contenedor .contenido #informacion #contenidoInformacion{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+#contenedor .contenido #informacion #contenidoInformacion span{
+    background-color: green;
+}
+#contenedor .contenido #informacion #contenidoInformacion #mostrarDia{
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+#contenedor .contenido #informacion #contenidoInformacion #mostrarSala{
+    position: absolute;
+    top: 85px;
+    left: 95px;
+    width: 80px;
+}
+#contenedor .contenido #informacion #contenidoInformacion #mostrarHorario{
+    position: absolute;
+    top: 135px;
+    left: 120px;
+    width: 80px;
+}
+#contenedor .contenido #informacion #contenidoInformacion #mostrarSubtitulo{
+    position: absolute;
+    top: 180px;
+    left: 135px;
+}
+#contenedor .contenido #informacion #contenidoInformacion #mostrarIdioma{
+    position: absolute;
+    top: 225px;
+    left: 120px;
+}
+
+
+#contenedor .contenido #total{
+    position: absolute;
+    top: 80px;
+    left: 700px;
+    width: 480px;
+    height: 400px;
+    background-color: red;
+}
+#contenedor .contenido #total #titulo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: green;
+    width: 480px;
+    height: 60px;
+}
+#contenedor .contenido #total #titulo strong{
+    font-size: 50px;
+    color: blue;
+    font-style: italic;
+}
+#contenedor .contenido #total #totalAPagar{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar{
+    font-size:20px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #TotalEntradaAdulto{
+    position: absolute;
+    top: 122px;
+    left: 130px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #totalEntradaMayor{
+    position: absolute;
+    top: 170px;
+    left: 130px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #totalEntradaNiño{
+    position: absolute;
+    top: 215px;
+    left: 130px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #cantidad{
+    position: absolute;
+    top: 101px;
+    left: 300px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #cantidad2{
+    position: absolute;
+    top: 147px;
+    left: 360px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #cantidad3{
+    position: absolute;
+    top: 192px;
+    left: 265px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #monto{
+    margin-top: 30px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #totalEntradas{
+    position: absolute;
+    top: 260px;
+    left: 170px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #monto #totalPagar{
+    position: absolute;
+    top: 312px;
+    left: 175px;
+}
+#contenedor .contenido #comprarTicket{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    width: 600px;
+    height: 300px;
+    background-color: blueviolet;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #limite{
+    width: 200px;
+    position: absolute;
+    left: 10px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #entradaMayor{
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    width: 50px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #tipoTicket{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #costoTicket{
+    position: absolute;
+    top: 40px;
+    left: 250px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #cantidadTicket{
+    position: absolute;
+    top: 40px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #entradaAdulto{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #entradaNiño{
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    width: 100px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #precio1{
+    position: absolute;
+    top: 70px;
+    left: 255px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #precio2{
+    position: absolute;
+    top: 140px;
+    left: 255px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #precio3{
+    position: absolute;
+    top: 230px;
+    left: 255px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #mostrarCantidadTicket{
+    background-color: azure;
+    width: 20px;
+    padding-left: 10px;
+    position: absolute;
+    top: 70px;
+    left: 509px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #mostrarCantidadTicket2{
+    background-color: azure;
+    width: 20px;
+    padding-left: 10px;
+    position: absolute;
+    top: 140px;
+    left: 509px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #mostrarCantidadTicket3{
+    background-color: azure;
+    width: 20px;
+    padding-left: 10px;
+    position: absolute;
+    top: 230px;
+    left: 509px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #restarTicket{
+    border-radius: 50%;
+    font-size: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    top: 70px;
+    left: 480px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #restarTicket2{
+    border-radius: 50%;
+    font-size: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    top: 140px;
+    left: 480px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #restarTicket3{
+    border-radius: 50%;
+    font-size: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    top: 230px;
+    left: 480px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #sumarTicket{
+    border-radius: 60%;
+    font-size: 15px;
+    position: absolute;
+    top: 70px;
+    left: 550px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #sumarTicket2{
+    border-radius: 60%;
+    font-size: 15px;
+    position: absolute;
+    top: 140px;
+    left: 550px;
+}
+#contenedor .contenido #comprarTicket #contenidoTicket #sumarTicket3{
+    border-radius: 60%;
+    font-size: 15px;
+    position: absolute;
+    top: 230px;
+    left: 550px;
+}
+#contenedor .contenido #total #totalAPagar #contenidoAPagar #paso1{
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: blue;
+    border-color: gray;
+}
