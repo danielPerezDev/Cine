@@ -18,11 +18,26 @@
     height: 400px;
     display: flex;
     justify-content: center;
+    border: 3px solid black;
 }
 #contenedor .contenido .elegirPelicula form #tabla{
     margin-top: 60px;
     margin-left: 45px;
     background-color:  #ccd1d1;
+}
+#contenedor .contenido .elegirPelicula form #tabla td select{
+    height: 30px;
+    border: 1px solid black;
+}
+#contenedor .contenido .elegirPelicula form #tabla td input{
+    font-size: 20px;
+    border: 3px black solid;
+}
+#contenedor .contenido .elegirPelicula form #tabla td input[type=radio]{
+    font-size: 20px;
+}
+#contenedor .contenido .elegirPelicula form #tabla td{
+    font-size: 15px;
 }
 #contenedor .contenido .elegirPelicula iframe{
     margin-top: 30px;
@@ -34,6 +49,7 @@
     top: 420px;
     height: 350px;
     background-color: #95a5a6;
+    border: 3px solid black;
 }
 #contenedor .contenido .info p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
