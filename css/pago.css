@@ -1,0 +1,62 @@
+
+#contenedor .contenido{
+    display: flex;
+    justify-content: center;
+}
+#contenedor .contenido #solicitarDatos{
+    margin-top: 90px;
+    background-color: #5d6d7e;
+    width: 700px;
+    height: 650px;
+    display: flex;
+    
+}
+#contenedor .contenido span{
+    margin-left: 15px;
+}
+#contenedor .contenido form{
+    margin-top: 90px;
+    margin-left: 160px;
+}
+#contenedor .contenido label{
+    font-size: 20px;
+    color: white;
+}
+#contenedor .contenido input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#contenedor .contenido #fecha{
+    width: 60px;
+}
+#contenedor .contenido form hr{
+    border-bottom: 1px dashed #666666;
+    width: 400px;
+    margin-right: 50px;
+}
+#contenedor .contenido form #dia{
+    width: 80px;
+}
+#contenedor .contenido form #mes{
+    width: 80px;
+}
+#contenedor .contenido form #anio{
+    width: 80px;
+}
+#contenedor .contenido form p #pago{
+    position: absolute;
+    top: 541px;
+    left: 540px;
+}
+#contenedor .contenido form p{
+    font-size: 20px;
+}
+#contenedor .contenido form #botonPagar{
+    font-size: 20px;
+    border: 3px black solid;
+}

@@ -52,6 +52,10 @@ function obtenerDatos(){
     var $horario = document.getElementById("mostrarHorario");
     $horario.innerHTML=localStorage.getItem('horario');
 }
+function obtenerDatos2(){
+    var $pago = document.getElementById("pago");
+    $pago.innerHTML=localStorage.getItem('total');
+}
 function calcularEntradaAdulto(){
     var $cartelCantidad = document.getElementById("cantidad");
     var $cartelSubtotal = document.getElementById("TotalEntradaAdulto")
@@ -119,7 +123,6 @@ function calcularEntradaNinio(){
     }
 }
 function calcularEntradaNinio2(){
-    var $pagar = document.getElementById("totalPagar");
     var $cartelCantidad = document.getElementById("cantidad3");
     var $cartelSubtotal = document.getElementById("totalEntradaNiño")
     restarTicket3.onclick = () => {
@@ -149,4 +152,10 @@ function totalEntradas(){
     var $conta = 0;
     $conta+=parseInt($entrada1)+parseInt($entrada2)+parseInt($entrada3);
     $entradas.innerHTML=$conta;
+}
+function elegirAsientos(){
+    var a=document.getElementById("asientoNoOcupado");
+	for (var i=0; i<a.length; i++) {
+        a[i].style.backgroundColor="blue";
+    }
 }

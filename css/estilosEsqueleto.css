@@ -4,11 +4,11 @@ body{
     font-size: 13px;
 }
 #contenedor{
-    background-color: darkgray;
+    background-color: #839192;
     height: 2000px;
 }
 #contenedor .encabezado{
-    background-color: #4955a9;
+    background-color:    #17202a ;
     width: 1366px;
     height: 60px;
     position: fixed;
@@ -17,11 +17,11 @@ body{
 #contenedor .piePagina{
     position: relative;
     top: 250px;
-    background-color: rgb(58, 0, 255);
+    background-color:  #17202a ;
     height: 260px;
 }
 #contenedor .contenido .peliculas .fila1{
-    background-color: #49a98c;
+    background-color:   #2471a3;
     padding: 30px;
     position: relative;
     top: 100px;
@@ -32,7 +32,7 @@ body{
     justify-content:center;
 } 
 #contenedor .contenido .peliculas .fila2{
-    background-color: #49a98c;
+    background-color:   #2471a3;
     padding: 30px;
     position: relative;
     top: 150px;
@@ -44,7 +44,7 @@ body{
     
 }  
 #contenedor .contenido .peliculas .fila3{
-    background-color: #49a98c;
+    background-color:   #2471a3;
     padding: 30px;
     position: relative;
     top: 200px;
@@ -56,7 +56,7 @@ body{
     
 }
 #contenedor .contenido .peliculas .fila4{
-    background-color: #49a98c;
+    background-color:   #2471a3;
     margin-top: 60px;
     padding: 30px;
     position: relative;
@@ -143,8 +143,8 @@ body{
 }
 #contenedor .encabezado .logoEncabezado h1 a{
     text-decoration: none; 
-    color: aqua;
-}
+    color:   white;
+} 
 #contenedor .encabezado .menu{
     float: right;
     width: 10px;
@@ -238,12 +238,16 @@ body{
 #contenedor .piePagina .redes div{
     display: flex;
     align-items: center;
-    background-color: blue;
     width: 190px;
 }
 #contenedor .piePagina .redes div a{
-    background-color: yellow;
     padding: 5px;
     width: 55px;
     margin: 2px;
+}
+#contenedor .piePagina .redes div .X{
+    margin-right: 15px;
+}
+#contenedor .piePagina .redes div .instagram{
+    margin-right: 10px;
 }

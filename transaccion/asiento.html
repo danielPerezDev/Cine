@@ -4,11 +4,12 @@
         <title>/YouCINE</title>
         <link rel="stylesheet" type="text/css" href="/Cine/css/estilosEsqueleto.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/Cine/css/transaccion.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/Cine/css/asiento.css" media="screen" />
         <script src="../javascript/menu.js"></script>
         <script src="../javascript/funcionesImagenes.js"></script>
         <script src="../javascript/localStorage.js"></script>
     </head>
-    <body onload="obtenerDatos()">
+    <body>
         <div id="contenedor">
             <div class="encabezado">
                     <div class="logoEncabezado">
@@ -16,7 +17,101 @@
                     </div>
             </div>
             <div class="contenido">
-                
+                <span><p>2- SELECCIONE ASIENTOS:</p></span>
+                <div id="seleccionAsiento">
+                    <div id="pantalla"><p id="nombrePantalla">PANTALLA</p></div>
+                    <div id="fila">
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                    </div>
+                    <div id="fila">
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado" ></div>
+                        <div id="asientoOcupado" ></div>
+                        <div id="asientoOcupado" ></div>
+                    </div>
+                    <div id="fila">
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                    </div>
+                    <div id="fila">
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento" onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                    </div>
+                    <div id="fila">
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                    </div>
+                    <div id="fila">
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                    </div>
+                    <div id="fila">
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asientoOcupado"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                        <div id="asiento" class="asiento"onclick="this.style.backgroundColor='white'"></div>
+                    </div>
+                </div>
+                <a href="pago.html"><button id="paso2">Siguiente</button></a>
+                <div id="cantOcupado"></div>
+                <span id="descripcion1">ASIENTOS OCUPADOS</span>
+                <div id="cantDisponibles"></div>
+                <span id="descripcion2">ASIENTOS DISPONIBLES</span>
+                <div id="tusAsientos"></div>
+                <span id="descripcion3">TUS ASIENTOS</span>
             </div> 
             <div class="piePagina">
                 <div class="logo">
@@ -32,9 +127,9 @@
                 <div class="redes">
                     <p>NUESTRAS REDES</p>
                     <div>
-                        <a href="https://x.com/?lang=es" target="_blank" class="X"><img src="" alt="Twitter"></a>
-                        <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="" alt="Instagram"></a>
-                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="facebook"><img src="" alt="Facebook"></a>
+                        <a href="https://x.com/?lang=es" target="_blank" class="X"><img src="../imagenes/icons8-x.svg" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="../imagenes/icons8-instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="facebook"><img src="../imagenes/icons8-facebook.svg" alt="Facebook"></a>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
     height: 1200px;
 }
 #contenedor .contenido{
-    background-color: black;
+    
     position: relative;
     top:100px;
     width: 1200px;
@@ -11,7 +11,7 @@
 }
 #contenedor .contenido .elegirPelicula{
     position: absolute;
-    background-color: blueviolet;
+    background-color:  #d0d3d4;
     margin-top: 35px;
     margin-left: 150px;
     width: 900px;
@@ -22,7 +22,7 @@
 #contenedor .contenido .elegirPelicula form #tabla{
     margin-top: 60px;
     margin-left: 45px;
-    background-color: aqua;
+    background-color:  #ccd1d1;
 }
 #contenedor .contenido .elegirPelicula iframe{
     margin-top: 30px;
@@ -33,7 +33,7 @@
     width: 900px;
     top: 420px;
     height: 350px;
-    background-color: rgb(0, 200, 255);
+    background-color: #95a5a6;
 }
 #contenedor .contenido .info p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -42,13 +42,13 @@
 }
 #contenedor .contenido .info p strong{
     text-decoration: underline;
-    text-decoration-color: hsl(70, 100%, 40%);
+    text-decoration-color: hsla(308, 62%, 53%, 0.68);
 }
 #contenedor .contenido .info h2{
     margin-left: 15px; 
     text-decoration: underline;
     text-decoration-style: double;
-    text-decoration-color: hsl(70, 100%, 40%);   
+    text-decoration-color: hsl(308, 62%, 53%, 0.68);   
 }
 #contenedor .contenido .reloj{
     position: absolute;
