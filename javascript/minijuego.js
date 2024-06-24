@@ -48,7 +48,7 @@ function temporizador(){
 }
 function sombraRespuesta(){
     var $respuesta = document.getElementById("respuesta");
-    $respuesta.style="box-shadow:10px 10px 8px 5px white;";
+    $respuesta.style="box-shadow:10px 10px 8px 5px black;";
 }
 function noSombraRespuesta(){
     var $respuesta = document.getElementById("respuesta");
@@ -56,7 +56,7 @@ function noSombraRespuesta(){
 }
 function sombraRespuesta2(){
     var $respuesta = document.getElementById("respuesta2");
-    $respuesta.style="box-shadow:10px 10px 8px 5px white;";
+    $respuesta.style="box-shadow:10px 10px 8px 5px black;";
 }
 function noSombraRespuesta2(){
     var $respuesta = document.getElementById("respuesta2");
@@ -64,7 +64,7 @@ function noSombraRespuesta2(){
 }
 function sombraRespuesta3(){
     var $respuesta = document.getElementById("respuesta3");
-    $respuesta.style="box-shadow:10px 10px 8px 5px white;";
+    $respuesta.style="box-shadow:10px 10px 8px 5px black;";
 }
 function noSombraRespuesta3(){
     var $respuesta = document.getElementById("respuesta3");

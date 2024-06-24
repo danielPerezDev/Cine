@@ -13,6 +13,7 @@ body{
     height: 60px;
     position: fixed;
     z-index: 5;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.5), 0 6px 20px  0 rgb(0, 0, 0, 0.19);
 }
 #contenedor .piePagina{
     position: relative;
@@ -21,7 +22,7 @@ body{
     height: 260px;
 }
 #contenedor .contenido .peliculas .fila1{
-    background-color:   #2471a3;
+    background-color: #778899;
     padding: 30px;
     position: relative;
     top: 100px;
@@ -30,9 +31,10 @@ body{
     display: flex;
     align-items: center;
     justify-content:center;
+    border:2px black solid;
 } 
 #contenedor .contenido .peliculas .fila2{
-    background-color:   #2471a3;
+    background-color: #808080;
     padding: 30px;
     position: relative;
     top: 150px;
@@ -41,10 +43,11 @@ body{
     display: flex;
     align-items: center;
     justify-content:center;
+    border:2px black solid;
     
 }  
 #contenedor .contenido .peliculas .fila3{
-    background-color:   #2471a3;
+    background-color: #778899;
     padding: 30px;
     position: relative;
     top: 200px;
@@ -53,10 +56,11 @@ body{
     display: flex;
     align-items: center;
     justify-content:center;
+    border:2px black solid;
     
 }
 #contenedor .contenido .peliculas .fila4{
-    background-color:   #2471a3;
+    background-color: #808080;
     margin-top: 60px;
     padding: 30px;
     position: relative;
@@ -66,6 +70,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:center;
+    border:2px black solid;
     
 }     
 /*cajas de la fila1*/
@@ -92,18 +97,22 @@ body{
 #contenedor .contenido .peliculas .fila1 div a img{
     height: 228px;
     width: 154px;
+    border:2px black solid;
 }
 #contenedor .contenido .peliculas .fila2 div a img{
     height: 228px;
     width: 154px;
+    border:2px black solid;
 }
 #contenedor .contenido .peliculas .fila3 div a img{
     height: 228px;
     width: 154px;
+    border:2px black solid;
 }
 #contenedor .contenido .peliculas .fila4 div a img{
     height: 228px;
     width: 154px;
+    border:2px black solid;
 }
 /*cajas de la fila2*/
 #contenedor .contenido .peliculas .fila2 div{
@@ -156,12 +165,12 @@ body{
 }
 #contenedor .encabezado .menu ul li .menu2 .lista2{
     padding-top: 10px;
-    background-color: darkgray;
+    background-color: #839192;
     width: 95px;
     height: 160px;
     margin-top: -10px;
     margin-left: -20px;
-    border:2px white solid;
+    border:2px black solid;
     padding-left: 5px;
 }
 #contenedor .encabezado .menu ul li .menu2 .lista2 li a{
