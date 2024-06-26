@@ -18,6 +18,16 @@ function guardarDatos2(){
     setEntry('cantEntradas', $cantidadEntradas);
     setEntry('total', $totalAPagar);
 }
+function guardarJugadoresTabla($ganador){
+    var $cartel = document.getElementById("contenidoSolicitar");
+    $cartel.style="display: none"
+    var $tabla = document.getElementById("TablaJugadores");
+    var $fila = $tabla.insertRow($tabla.rows.length);
+    var $celda0 = $fila.insertCell(0);
+    $celda0.innerHTML=$ganador;
+}
+
+
 function setEntry(nombre, valor) {
     /*Guardando los datos en el LocalStorage*/
     localStorage.setItem(nombre, valor);
